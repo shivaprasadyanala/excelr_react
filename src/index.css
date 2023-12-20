@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.btn{
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: grey;
+  color:#fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn-disable
+{
+cursor: not-allowed;
+pointer-events: none;
+
+/*Button disabled - CSS color class*/
+color: #c0c0c0;
+background-color: #ffffff;
+
+}

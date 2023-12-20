@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
+import FormHookUsage from './components/FormHookUsage';
+import LifeCycleOfComponent from './components/LifeCycleOfComponent';
+// import Reusable from './components/Reusable';
+// import Employee from './components/Employee';
+// import DemoClassComp from './components/DemoClassComp';
+// import RouterComp from './components/RouterComp';
+// import NestedRouting from './components/NestedRouting';
+// import ControlledComponents from './components/ControlledComponents';
+// import MultipleFormFeilds from './components/MultipleFormFeilds';
+import UncontrolledComponent from './components/UncontrolledComponent';
 function App() {
+  // let data = "hello";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <RouterComp />
+      <Reusable />
+      <Employee department={"electrical"} name={"shiva"} /> */}
+      {/* <DemoClassComp /> */}
+      {/* <NestedRouting /> */}
+      {/* <ControlledComponents /> */}
+      {/* <MultipleFormFeilds /> */}
+      {/* <UncontrolledComponent /> */}
+      {/* <FormHookUsage /> */}
+      <LifeCycleOfComponent />
+    </>
   );
 }
 
