@@ -9,14 +9,15 @@ class LifeCycleOfComponent extends Component {
   console.log("component in mounting phase");
  }
  updateState() {
-  this.setState = ({ text: "updated lifecycle" })
+  this.setState({ text: "updated lifecycle" })
  }
  render() {
+  console.log("compoenent got rendered");
   return (
    <div>
     <p>this is to test life cycle</p>
     <p>state value {this.state.text}</p>
-    <button onClick={this.updateState.bind(this)}>click here</button>
+    <button onClick={this.updateState.bind(this)}>update component</button>
    </div>
   );
  }

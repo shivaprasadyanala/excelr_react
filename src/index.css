@@ -23,6 +23,17 @@ code {
 .btn:hover{
   cursor: pointer;
 }
+.outercard{
+  display: flex;
+  flex-direction: row;
+
+}
+.card{
+  border: 1px solid red;
+  padding: 10px;
+  margin:10px;
+  list-style-type: none;
+}
 .btn-disable
 {
 cursor: not-allowed;
