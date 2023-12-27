@@ -19,8 +19,15 @@ import { useState } from 'react';
 import FetchUsage from './hooks/FetchUsage';
 import KeyUsage from './components/KeyUsage';
 import dataObject from './data.json'
+import HocWithHover from './components/HocWithHover';
+import TextBoxComponent from './components/TextBoxComponent';
+import ButtonTest from './MaterialUi/ButtonTest';
+import TextComponent from './components/TextComponent';
 function App() {
   const [mount, setMount] = useState(true)
+  const TextBoxComponentWithHover = HocWithHover(TextBoxComponent);
+  const TextComponentWithHover = HocWithHover(TextComponent);
+
   // const data = [
   //   {
   //     "id": 1,
@@ -72,7 +79,10 @@ function App() {
       {/* <UseMemoUsage /> */}
       {/* <AxiosUsage /> */}
       {/* <FetchUsage /> */}
-      <KeyUsage data={dataObject.data} />
+      {/* <KeyUsage data={dataObject.data} /> */}
+      {/* <TextBoxComponentWithHover type="text" />
+      <TextComponentWithHover text="This is to test hoc" /> */}
+      <ButtonTest />
     </>
   );
 }

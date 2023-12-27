@@ -1,6 +1,5 @@
 import React from 'react'
 import dataObject from '../data.json'
-import fs from 'fs';
 const KeyUsage = ({ data }) => {
  const testdata = {
   "id": 3,
